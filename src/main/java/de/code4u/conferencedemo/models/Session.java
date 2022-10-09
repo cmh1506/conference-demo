@@ -23,6 +23,11 @@ public class Session {
 
     }
 
+    public Session(String sessionName, String sessionDescription, Integer sessionLength) {
+        this.sessionName = sessionName;
+        this.sessionDescription = sessionDescription;
+        this.sessionLength = sessionLength;
+    }
 
     @ManyToMany
     @JoinTable(name = "session_speakers",
